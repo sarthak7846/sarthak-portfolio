@@ -9,26 +9,36 @@ const Hero = () => {
     <div className="pb-20 pt-36">
       <div>
         <Spotlight
-          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-          fill="white"
+          className="-top-40 -left-10 md:-left-[20rem] md:-top-20 h-screen"
+          fill="yellow"
         />
         <Spotlight
-          className="h-[80vh] w-[50vw] top-10 left-full"
-          fill="purple"
+          className="h-[80vh] w-[50vw] top-10 left-[110rem]"
+          fill="yellow"
         />
-        <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
+        <Spotlight
+          className="left-80 top-28 h-[80vh] w-[50vw]"
+          fill="#74F20D"
+        />
+
+        <Spotlight
+          className="left-[80rem] top-28 h-[80vh] w-[50vw]"
+          fill="#74F20D"
+        />
+        {/* #376006 */}
+        {/* <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" /> */}
       </div>
 
       <div
-        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+        className="h-screen w-full  bg-bg-100
        absolute top-0 left-0 flex items-center justify-center"
       >
         {/* Radial gradient for the container to give a faded look */}
-        <div
+        {/* <div
           // chnage the bg to bg-black-100, so it matches the bg color and will blend in
-          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
+          className="absolute pointer-events-none inset-0 flex items-center justify-center 
          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
-        />
+        /> */}
       </div>
 
       <div className="flex justify-center relative my-20 z-10">
@@ -39,11 +49,11 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Crafting Ideas into Effortless User Interactions"
             className="text-center text-[40px] md:text-5xl lg:text-5xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-text-950">
             Hi! I&apos;m Sarthak, a Full Stack Developer based in India.
           </p>
 

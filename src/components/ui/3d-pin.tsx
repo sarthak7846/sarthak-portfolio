@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../../lib/utils";
-import { Link } from "react-router-dom";
 
 export const PinContainer = ({
   children,
@@ -28,14 +27,16 @@ export const PinContainer = ({
   };
 
   return (
-    <Link
+    <a
       className={cn(
         "relative group/pin z-50  cursor-pointer",
         containerClassName
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      to={href || "/"}
+      href={href || "/"}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <div
         style={{
@@ -54,7 +55,7 @@ export const PinContainer = ({
         </div>
       </div>
       <PinPerspective title={title} href={href} />
-    </Link>
+    </a>
   );
 };
 

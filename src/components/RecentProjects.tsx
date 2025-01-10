@@ -53,7 +53,7 @@ const RecentProjects = () => {
                   {item.iconLists.map((icon, index) => (
                     <div
                       key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      className="border border-white/[.2] rounded-full bg-bg-50 lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
@@ -62,13 +62,21 @@ const RecentProjects = () => {
                     </div>
                   ))}
                 </div>
-
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-text-900">
-                    Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#78F119" />
-                </div>
+                {item.id === 1 ? (
+                  <div className="flex justify-center items-center">
+                    <p className="flex lg:text-xl md:text-xs text-sm text-text-900">
+                      Check Live Demo
+                    </p>
+                    <FaLocationArrow className="ms-3" color="#78F119" />
+                  </div>
+                ) : (
+                  <div className="flex justify-center items-center">
+                    <p className="flex lg:text-xl md:text-xs text-sm text-text-900">
+                      Check Live Site
+                    </p>
+                    <FaLocationArrow className="ms-3" color="#78F119" />
+                  </div>
+                )}
               </div>
             </PinContainer>
           </div>

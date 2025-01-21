@@ -87,21 +87,22 @@ export const projects = [
     ],
     link: "http://bit.ly/4fR9uHQ",
   },
+
   {
     id: 2,
+    title: "Store It",
+    des: "Effortless, secure cloud storage to organize and share your files anytime.",
+    img: "/project2.png",
+    iconLists: ["/next.svg", "/shadcn.png", "/tail.svg", "/appwrite.svg"],
+    link: "https://store-it-pi-six.vercel.app/",
+  },
+  {
+    id: 3,
     title: "Realtime Messaging App",
     des: "A chat app with messaging among its users in real time.",
     img: "/project1.png",
     iconLists: ["/express.png", "/socketio.png"],
     link: "https://centum-messenger.onrender.com/",
-  },
-  {
-    id: 3,
-    title: "Customized IPL Theme Merchandise App",
-    des: "A personalized IPL team merchandise for real team vibes.",
-    img: "/project2.png",
-    iconLists: ["/react.png", "/vite.svg", "/tail.svg", "/shadcn.png"],
-    link: "https://ipl-ecom.vercel.app/",
   },
   // {
   //   id: 1,

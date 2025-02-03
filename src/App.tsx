@@ -9,6 +9,7 @@ import Experience from "./components/Experience";
 import Approach from "./components/Approach";
 import Footer from "./components/Footer";
 import Layout from "./components/Layout/Layout";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Experience />
             <Approach />
             <Footer />
+            <Analytics />
           </div>
         </main>{" "}
       </Layout>

@@ -56,14 +56,23 @@ const Hero = () => {
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-text-950">
             Hi! I&apos;m Sarthak, a Full Stack Developer based in India.
           </p>
+          <div className="flex gap-3">
+            <a href="#about">
+              <MagicButton
+                title="Show my work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
 
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+            <a href="https://bit.ly/48xm4bL" target="_blank">
+              <MagicButton
+                title="See my resume"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
